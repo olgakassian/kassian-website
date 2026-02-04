@@ -198,7 +198,7 @@ h3 {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 60% 40%;
     gap: var(--spacing-xl);
     align-items: center;
 }
