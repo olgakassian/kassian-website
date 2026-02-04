@@ -188,7 +188,12 @@ h3 {
 /* ===== Hero Section ===== */
 .hero {
     background-color: var(--color-background-gray);
-    padding: var(--spacing-3xl) 0;
+    min-height: calc(100vh - 80px);
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-xl) 0;
+    overflow: hidden;
 }
 
 .hero-grid {
@@ -206,6 +211,16 @@ h3 {
     line-height: 1.1;
 }
 
+.hero-content h1 .desktop-break {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 .desktop-break {
+        display: none;
+    }
+}
+
 .hero-content p {
     color: var(--color-text-light);
     margin-bottom: var(--spacing-lg);
@@ -216,25 +231,9 @@ h3 {
 .hero-image {
     display: flex;
     justify-content: center;
-    position: relative;
-}
-
-.hero-image::before {
-    content: '';
-    position: absolute;
-    width: 85%;
-    height: 90%;
-    background-color: var(--color-accent);
-    border-radius: 60% 40% 50% 50% / 50% 50% 50% 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    z-index: 0;
 }
 
 .hero-image img {
-    position: relative;
-    z-index: 1;
     width: 100%;
     max-width: 380px;
     object-fit: cover;
