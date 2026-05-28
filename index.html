@@ -121,7 +121,6 @@
             <div
               style="
                 background: var(--color-background-gray);
-                border-radius: var(--border-radius-lg);
                 overflow: hidden;
               "
             >
@@ -309,7 +308,6 @@
             <div
               style="
                 background: var(--color-background-gray);
-                border-radius: var(--border-radius-lg);
                 overflow: hidden;
               "
             >
@@ -681,7 +679,6 @@
             <div
               style="
                 background: var(--color-background-gray);
-                border-radius: var(--border-radius-lg);
                 overflow: hidden;
               "
             >
@@ -1205,8 +1202,10 @@
               y="10"
               width="400"
               height="48"
-              rx="12"
-              fill="#ffffff"
+              rx="4"
+              fill="#F5F2EE"
+              stroke="#DCDAD2"
+              stroke-width="0.5"
             />
             <text
               x="450"
@@ -1372,7 +1371,7 @@
               y="230"
               width="90"
               height="32"
-              rx="8"
+              rx="3"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1392,7 +1391,7 @@
               y="230"
               width="90"
               height="32"
-              rx="8"
+              rx="3"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1412,7 +1411,7 @@
               y="230"
               width="90"
               height="32"
-              rx="8"
+              rx="3"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1463,7 +1462,7 @@
               y="230"
               width="90"
               height="32"
-              rx="8"
+              rx="3"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1483,7 +1482,7 @@
               y="230"
               width="90"
               height="32"
-              rx="8"
+              rx="3"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1503,7 +1502,7 @@
               y="230"
               width="90"
               height="32"
-              rx="8"
+              rx="3"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1554,7 +1553,7 @@
               y="230"
               width="90"
               height="32"
-              rx="8"
+              rx="3"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1574,7 +1573,7 @@
               y="230"
               width="90"
               height="32"
-              rx="8"
+              rx="3"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1594,7 +1593,7 @@
               y="230"
               width="90"
               height="32"
-              rx="8"
+              rx="3"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1624,8 +1623,10 @@
               y="10"
               width="240"
               height="44"
-              rx="10"
-              fill="#ffffff"
+              rx="3"
+              fill="#F5F2EE"
+              stroke="#DCDAD2"
+              stroke-width="0.5"
             />
             <text
               x="180"
@@ -1706,7 +1707,7 @@
               y="192"
               width="90"
               height="26"
-              rx="6"
+              rx="2"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1726,7 +1727,7 @@
               y="192"
               width="90"
               height="26"
-              rx="6"
+              rx="2"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1746,7 +1747,7 @@
               y="192"
               width="90"
               height="26"
-              rx="6"
+              rx="2"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1827,7 +1828,7 @@
               y="362"
               width="90"
               height="26"
-              rx="6"
+              rx="2"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1847,7 +1848,7 @@
               y="362"
               width="90"
               height="26"
-              rx="6"
+              rx="2"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1867,7 +1868,7 @@
               y="362"
               width="90"
               height="26"
-              rx="6"
+              rx="2"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1948,7 +1949,7 @@
               y="532"
               width="90"
               height="26"
-              rx="6"
+              rx="2"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1968,7 +1969,7 @@
               y="532"
               width="90"
               height="26"
-              rx="6"
+              rx="2"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -1988,7 +1989,7 @@
               y="532"
               width="90"
               height="26"
-              rx="6"
+              rx="2"
               fill="#F5F2EE"
               stroke="#DCDAD2"
               stroke-width="0.5"
@@ -2138,7 +2139,7 @@
         let lastX = 0;
         let lastTime = 0;
 
-        function getGap() { return 16; }
+        function getGap() { return 6; }
         function getCardWidth() { return cards[0].offsetWidth + getGap(); }
         function getMaxScroll() {
           return Math.max(0, (cards.length * getCardWidth()) - wrapper.offsetWidth);
