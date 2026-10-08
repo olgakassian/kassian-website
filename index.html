@@ -6,8 +6,6 @@
     <title>Olga Kassian | Strategy & Execution for CEOs</title>
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -20,7 +18,7 @@
             <li><a href="#testimonials">Reviews</a></li>
             <li><a href="#about">About</a></li>
           </ul>
-          <a href="#contact" class="btn btn-primary js-calendly">Quick intro call</a>
+          <a href="mailto:olgakassian@gmail.com" class="btn btn-primary">Quick intro call</a>
         </div>
         <button class="mobile-menu-toggle" aria-label="Toggle menu">
           <span></span>
@@ -45,7 +43,7 @@
             I step into growing companies to bring structure to marketing and
             make sure it delivers.
           </p>
-          <a href="#contact" class="btn btn-primary js-calendly"
+          <a href="mailto:olgakassian@gmail.com" class="btn btn-primary"
             >Quick intro call <span>&nearr;</span></a
           >
         </div>
@@ -2039,7 +2037,7 @@
         <div class="footer-cta">
           <p class="footer-cta-label">Ready to move?</p>
           <h2 class="footer-cta-title">Let's start with a conversation.</h2>
-          <a href="mailto:olga@olgakassian.com" class="btn btn-primary footer-btn js-calendly">Quick intro call</a>
+          <a href="mailto:olgakassian@gmail.com" class="btn btn-primary footer-btn">Quick intro call</a>
         </div>
         <div class="footer-bottom">
           <div class="footer-brand">
@@ -2055,33 +2053,6 @@
       </div>
     </footer>
 
-    <script type="text/javascript">
-      var CALENDLY_URL = 'https://calendly.com/olga-olgakassian/30min'
-        + '?hide_event_type_details=1'
-        + '&hide_gdpr_banner=1'
-        + '&background_color=ffffff'
-        + '&text_color=000000'
-        + '&primary_color=0000ff';
-
-      window.addEventListener('load', function () {
-        if (window.Calendly) {
-          Calendly.initBadgeWidget({
-            url: CALENDLY_URL,
-            text: 'Quick Intro Call',
-            color: '#000000',
-            textColor: '#ffffff',
-            branding: false
-          });
-        }
-      });
-
-      document.addEventListener('click', function (e) {
-        var trigger = e.target.closest('.js-calendly');
-        if (!trigger || !window.Calendly) return;
-        e.preventDefault();
-        Calendly.initPopupWidget({ url: CALENDLY_URL });
-      });
-    </script>
 
     <script>
       // Mobile menu toggle
